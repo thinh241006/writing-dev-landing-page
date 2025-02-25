@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232830;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navbar .website-title a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+    list-style: none;
+  }
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+/* Logo */
+.logo img{
+    max-width: 12%;
+    height: auto;
+    align-self: center;
+}
+
+.logo .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.heading h1 {
+    font-size: 2.5em;
+    font-style: italic;
+    color: #FF7575;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+}
+
+.heading p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Article list */
+.article-list .list-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.card{ 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 90%;
+    max-height: 150px;
+    object-fit: contain;
+    margin:20px;
+}
+
+.card h4 {
+    font-size: 1.2em;
+    margin: 15px 15px 10px 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.9em;
+    margin: 0 15px 15px 15px;
+    color: #555;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.card-footer .date,
+.card-footer .author {
+    margin: 0;
+}
+
+.card-footer .dot {
+    margin: 0 5px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 50px; 
+}
+
+.pagination-item {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #909090;
+    transition: background-color 0.3s, color 0.3s;
+    font-style: italic;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    
+}
+
+.pagination-item:hover {
+    color: #f0f0f0; /* Hover effect */
+}
+
+.pagination-item.active {
+    color: #FF7575;
+}
+
+/* Footer */
+.footer{
+    border-top: 1px solid #4D4D4D;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Pushes child elements apart */
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds spacing between elements inside */
+}
+
+.right-side {
+    margin-left: auto; /* Pushes the right-side button away */
+}
+
+.footer-content .website-title a{
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-content .button{
+    width:auto;
+    padding: 10px 20px;
+}
+
+.right-side .btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white !important;
+}
+
+.right-side .btn img {
+    filter: brightness(0) invert(1);
+}
+
+.right-side .btn a {
+    color: white !important;
+    text-decoration: none;
+}
+
+
+/* Utility */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
